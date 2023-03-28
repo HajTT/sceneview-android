@@ -213,7 +213,7 @@ class PlaneRenderer(val sceneView: ArSceneView) {
                 ?: PlaneVisualizer(sceneView, plane).apply {
                     setPlaneMaterial(planeMaterial.defaultInstance)
                     setShadowMaterial(shadowMaterial.defaultInstance)
-                    setShadowReceiver(isShadowReceiver)
+                    setShadowReceiver(isShadowReceiver && visible)
                     setVisible(isVisible && visible)
                     setEnabled(isEnabled && isCameraTracking)
                 }.also {
