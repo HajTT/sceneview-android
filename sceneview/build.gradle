@@ -2,7 +2,6 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
     id 'filament-tools-plugin'
-    id 'org.jetbrains.dokka'
 }
 
 
@@ -130,4 +129,5 @@ dependencies {
     api "com.gorisse.thomas:android-view-lifecycle:1.0.5"
 }
 
-apply plugin: "com.vanniktech.maven.publish"
+
+
